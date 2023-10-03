@@ -13,7 +13,7 @@ class Product
 
     private function getFormattedPrice()
     {
-        $formatedPrice = (string) sprintf("%0.2f", $this->price);
+        $formatedPrice = sprintf("%0.2f", $this->price);
         $FormatedPriceToString = (string) $formatedPrice;
         return $FormatedPriceToString;
     }
@@ -29,7 +29,7 @@ class Product
 
 }
 
-$product = new Product(1, 'T-shirt', 19.67461346);
+$product = new Product(1, 'T-shirt', 19.99);
 $product->showDetails();
 
 ?>
